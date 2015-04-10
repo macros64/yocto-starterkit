@@ -14,7 +14,7 @@
 
   <project remote="oe" revision="dizzy" name="meta-openembedded" path="sources/meta-openembedded"/>
 
-  <project remote="freescale" revision="dizzy" name="fsl-community-bsp-base" path="sources/base">
+  <project remote="meta-starterkit" revision="master" name="yocto-meta-sk-base" path="sources/base">
 	<copyfile dest="README" src="README"/>
 	<copyfile dest="setup-environment" src="setup-environment"/>
   </project>
