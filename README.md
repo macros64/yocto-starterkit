@@ -1,9 +1,18 @@
+Если тилиты repo еще нет в вашей системе, то необходимо ее установить и пропистаь в PATH.
+http://source.android.com/source/downloading.html#installing-repo
+
+Если вкратце, то 
+$ mkdir ~/bin
+$ PATH=~/bin:$PATH
+$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+$ chmod a+x ~/bin/repo
+
 Кратко алгоритм сборки:
 
-repo init -u https://github.com/macros64/yocto-starterkit.git
-repo sync
+$ repo init -u https://github.com/macros64/yocto-starterkit.git
+$ repo sync
 
-source setup-environment <имя сборочной папки>
+$ source setup-environment <имя сборочной папки>
 
 Редактируем <рабочая папка>/conf/bblayers.conf и добавляем строчку на предпоследнюю линию в файле:
 ${BSPDIR}/sources/meta-sk \
