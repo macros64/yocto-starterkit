@@ -14,8 +14,6 @@ $ repo sync
 
 $ source setup-environment <имя сборочной папки>
 
-Редактируем <рабочая папка>/conf/bblayers.conf и добавляем строчку на предпоследнюю линию в файле:
-${BSPDIR}/sources/meta-sk \
 
 Редактируем <рабочая папка>/conf/local.conf
 и в первую строчку вписываем нашу плату: MACHINE ??= 'sk-imx6q'
