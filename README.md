@@ -2,17 +2,17 @@
 http://source.android.com/source/downloading.html#installing-repo
 
 Если вкратце, то 
-$ mkdir ~/bin
-$ PATH=~/bin:$PATH
-$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
-$ chmod a+x ~/bin/repo
+    $ mkdir ~/bin
+    $ PATH=~/bin:$PATH
+    $ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+    $ chmod a+x ~/bin/repo
 
 Кратко алгоритм сборки:
 
-$ repo init -u https://github.com/macros64/yocto-starterkit.git
-$ repo sync
+    $ repo init -u https://github.com/macros64/yocto-starterkit.git
+    $ repo sync
 
-$ source setup-environment <имя сборочной папки>
+    $ source setup-environment <имя сборочной папки>
 
 
 Редактируем <рабочая папка>/conf/local.conf
