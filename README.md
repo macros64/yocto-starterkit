@@ -10,7 +10,7 @@ http://source.android.com/source/downloading.html#installing-repo
 
 Кратко алгоритм сборки:
 
-    $ repo init -u https://github.com/macros64/yocto-starterkit.git
+    $ repo init -u https://github.com/macros64/yocto-starterkit.git -b jethro
     $ repo sync
     $ source setup-environment <имя сборочной папки>
 
@@ -24,4 +24,4 @@ bitbake sk-image-core
 Это минимальный консольный рабочий образ системы.
 После окончания сборки (несколько часов) результат можно будет найти в <рабочая папка>/tmp/deploy/images/
 
-Пока не до конца разобрался как делать образ .sdcard, он почему-то нулевой получается. Можно тестировать файловую систему с ядром, но только после того ,как в /boot положить dtb файл для платы с правильным именем.
+Пока не до конца разобрался как делать образ .sdcard, он почему-то нулевой получается. Можно тестировать файловую систему с ядром, но только после того, как в /boot положить dtb файл для платы с правильным именем.
